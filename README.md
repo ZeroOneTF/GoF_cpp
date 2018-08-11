@@ -10,7 +10,6 @@ $ cd build
 $ cmake --build .
 $ make test
 ```
-=======
 
 ## Naming
 
