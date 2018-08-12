@@ -24,11 +24,12 @@ FirstHalfUpperConverter::FirstHalfUpperConverter(AbstractConverter *converter)
 FirstHalfUpperConverter::~FirstHalfUpperConverter() {}
 
 std::string FirstHalfUpperConverter::convert(std::string str) {
-  int mid = str.size() / 2;
-  for (auto iter = str.begin(); iter != str.begin() + mid; iter++) {
+  std::string converted = ConverterDecorator::convert(str);
+  int mid = converted.size() / 2;
+  for (auto iter = converted.begin(); iter != converted.begin() + mid; iter++) {
     *iter = toupper(*iter);
   }
-  return ConverterDecorator::convert(str);
+  return converted;
 }
 
 LastHalfLowerConverter::LastHalfLowerConverter(AbstractConverter *converter)
@@ -37,10 +38,11 @@ LastHalfLowerConverter::LastHalfLowerConverter(AbstractConverter *converter)
 LastHalfLowerConverter::~LastHalfLowerConverter() {}
 
 std::string LastHalfLowerConverter::convert(std::string str) {
-  int mid = str.size() / 2;
-  for (auto iter = str.begin() + mid; iter != str.end(); iter++) {
+  std::string converted = ConverterDecorator::convert(str);
+  int mid = converted.size() / 2;
+  for (auto iter = converted.begin() + mid; iter != converted.end(); iter++) {
     *iter = tolower(*iter);
   }
-  return ConverterDecorator::convert(str);
+  return converted;
 }
 } // namespace corona10
