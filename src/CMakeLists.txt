@@ -6,6 +6,7 @@ target_sources(
     gof_cpp
     PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}/corona10/decorator.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/corona10/buffered_reader.cpp
     PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}
 )

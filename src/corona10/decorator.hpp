@@ -1,3 +1,6 @@
+#ifndef _DECORATOR_HPP_
+#define _DECORATOR_HPP_
+
 #include <string>
 
 namespace corona10 {
@@ -40,3 +43,5 @@ public:
 };
 
 } // namespace corona10
+
+#endif

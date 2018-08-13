@@ -9,6 +9,8 @@ $ cmake -H. -Bbuild
 $ cd build
 $ cmake --build .
 $ make test
+$ make cppcheck // cppcheck
+$ make clangformat // clangformat 
 ```
 
 ## Naming
