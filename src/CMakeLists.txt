@@ -7,6 +7,7 @@ target_sources(
     PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}/corona10/decorator.cpp
         ${CMAKE_CURRENT_LIST_DIR}/corona10/buffered_reader.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/corona10/abstract_factory.cpp
     PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}
 )
