@@ -4,6 +4,7 @@ add_executable(
     test_corona10
     test_corona10_abstract_factory.cpp
     test_corona10_adaptor_pattern.cpp
+    test_corona10_command.cpp
     test_corona10_buffered_reader.cpp
     test_corona10_decorator.cpp
     )
